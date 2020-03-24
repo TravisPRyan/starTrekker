@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Card from "../../shared/components/UIElements/Card";
-import "../../App.css";
+import "./TrekkerItem.css";
 import Avatar from "../../shared/components/UIElements/Avatar";
 
 const TrekkerItem = props => {

@@ -1,6 +1,6 @@
 import React from "react";
 import TrekkerItem from "./TrekkerItem";
-import "../../App.css";
+import "./TrekkersList.css";
 
 const TrekkersList = props => {
   if (props.items.length === 0) {
