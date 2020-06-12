@@ -1,0 +1,55 @@
+.dest-item {
+  margin: 1rem 0;
+}
+
+.dest-item__content {
+  padding: 0;
+}
+
+.dest-item__info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.dest-item__image {
+  width: 100%;
+  height: 12.5rem;
+  margin-right: 1.5rem;
+}
+
+.dest-item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dest-item__info h2,
+.dest-item__info h3,
+.dest-item__info p {
+  margin: 0 0 0.5rem 0;
+}
+
+.dest-item__actions {
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+.dest-item__modal-content {
+  padding: 0;
+}
+
+.dest-item__modal-actions {
+  text-align: right;
+}
+
+.dest-item__actions button,
+.dest-item__actions a {
+  margin: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .dest-item__image {
+    height: 20rem;
+  }
+}
