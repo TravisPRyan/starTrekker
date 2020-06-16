@@ -1,9 +1,10 @@
 import React from "react";
 import DestList from "../components/DestList";
+import { useParams } from "react-router-dom";
 
 const TEMP_DEST_ARRAY = [
   {
-    id: "D1",
+    id: "d1",
     title: "The Louvre",
     description: "Imperial Galactic Center",
     imageUrl:
@@ -13,10 +14,10 @@ const TEMP_DEST_ARRAY = [
       lat: 48.8606111,
       lng: 2.337644,
     },
-    creator: "U1",
+    creator: "u1",
   },
   {
-    id: "D2",
+    id: "d2",
     title: "The Louvre",
     description: "Imperial Galactic Center",
     imageUrl:
@@ -26,12 +27,14 @@ const TEMP_DEST_ARRAY = [
       lat: 48.8606111,
       lng: 2.337644,
     },
-    creator: "U2",
+    creator: "u2",
   },
 ];
 
 const TrekkerDest = () => {
-  return <DestList items={TEMP_DEST_ARRAY} />;
+  const userId = useParams().userId;
+  const loadedDest = TEMP_DEST_ARRAY.filter((dest) => dest.creator === userId);
+  return <DestList items={loadedDest} />;
 };
 
 export default TrekkerDest;
