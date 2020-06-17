@@ -1,5 +1,6 @@
 import React from "react";
 import "./DestItem.css";
+import Button from "../../shared/components/FormElements/Button";
 import Card from "../../shared/components/UIElements/Card";
 
 const DestItem = (props) => {
@@ -15,9 +16,11 @@ const DestItem = (props) => {
           <p>{props.description}</p>
         </div>
         <div className="dest-item__actions">
-          <button>VIEW ON MAP</button>
-          <button>EDIT</button>
-          <button>DELETE</button>
+          <Button inverse>VIEW ON MAP</Button>
+          <Button inverse to={`/destinations/${props.id}`}>
+            EDIT
+          </Button>
+          <Button inverse>DELETE</Button>
         </div>
       </Card>
     </li>
